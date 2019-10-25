@@ -1,7 +1,8 @@
 require 'test_helper'
 
 class TweetsControllerTest < ActionDispatch::IntegrationTest
-  # test "the truth" do
-  #   assert true
-  # end
+  test "index" do
+    @tweets = Tweet.all
+    assert true
+  end
 end
